@@ -1,0 +1,33 @@
+*{ 
+  margin:0;
+  padding:0;
+}
+
+:root{
+  --telaWidth: 100vw;
+  --telaHeith: 100vh;
+}
+
+#relogio-digital{
+  display:flex;
+  padding:10px;
+  position:relative;
+  top: calc(var(--telaHeith) / 2);
+  min-width:12em;
+  min-height:4em;
+  justify-content:center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+#hora,#minuto,#segundo{
+  width:3em;
+  height:3em;
+  border:2px solid blue;
+  margin: 0 5px;
+}
+
+/*
+-webkit-clip-path: polygon(0 0, 17% 14%, 16% 83%, 0 100%, 0 43%);
+clip-path: polygon(0 0, 17% 14%, 16% 83%, 0 100%, 0 43%);
+*/
