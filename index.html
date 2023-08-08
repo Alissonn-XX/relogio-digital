@@ -1,23 +1,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <title>To-do List | CJRM</title>
 </head>
-<body class="bg-dark">
-  <div id="relogio-digital">
-    <div id="hora">
-      <span>0</span><span>0</span>
-   </div>
-    <div id="minuto">
-      <span>0</span><span>0</span>
-   </div>
-    <div id="segundo">
-      <span>0</span><span>0</span>
-   </div>
+<body class="">
+ <div id="relogio-digital">
+      <div id="hora">
+        <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+          <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+          <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+          <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+          <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+          <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+          <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+       </svg>
+
+       <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+        <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+        <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+        <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+        <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+        <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+        <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+     </svg>
+      </div>
+      <span>:</span>
+      <div id="minuto">
+        <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+            <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+            <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+            <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+            <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+            <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+            <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+        </svg>
+
+        <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+          <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+          <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+          <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+          <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+          <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+          <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+        </svg>
+      </div>
+      <span>:</span>
+      <div id="segundo">
+        <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+            <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+            <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+            <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+            <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+            <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+            <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+        </svg>
+
+        <svg  viewBox="0 0 170 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="numero esquerda-alto "d="M0 1.01857L34 33.0186L31.5 161.519L0 172.019V1.01857Z" />
+          <path class="numero meio "d="M168 174.519L137.404 190.019L33 191.019L0 174.519L34.097 163.019H137.404L168 174.519Z" />
+          <path class="numero direita-alto " d="M168 173.019L138 161.019L138 33.324L168 1.01857V173.019Z" />
+          <path class="numero topo " d="M167.002 0.0185699L137.105 32.0333L35.0408 32.033L1.01924 0.0179987L167.002 0.0185699Z" />
+          <path class="numero direita-alto " d="M169.807 353.717L135.811 321.712L138.5 191.5L168.5 176L169.807 353.717Z" />
+          <path class="numero esquerda-baixo " d="M0.432312 176.736L31.8291 193.698L31.8114 321.392L1.80693 353.694L0.432312 176.736Z" />
+          <path class="numero baixo " d="M2.80434 354.694L32.7063 322.683L134.77 322.698L168.788 354.717L2.80434 354.694Z" />
+        </svg>
+      </div>
   </div>
 </body>
   <script src="app.js"></script>
