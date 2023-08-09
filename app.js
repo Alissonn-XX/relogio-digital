@@ -11,6 +11,7 @@ const relogio = () =>{
     return {hoas:horas,minutos:minutos,segundos:segundos}
 };
 
+
 const numHoras = (str) =>{
     
 }
@@ -25,6 +26,3 @@ const numSegundos = (str) =>{
 // setInterval(()=>{
 //     ativo(relogio())
 // },1000)
-
-
-
