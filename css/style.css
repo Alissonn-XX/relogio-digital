@@ -1,0 +1,46 @@
+*{ 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'relogio digital';
+}
+
+:root{
+  --telaWidth: 100vw;
+  --telaHeith: 100vh;
+}
+
+#relogio-digital{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ padding: 5px;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 25em;
+ height: 6.25em;
+ overflow: hidden;
+ outline: 2px solid red;
+ z-index: 100;
+ gap:10px;
+}
+
+#relogio-digital:is(.ativo) span{
+  display: inline-block;
+  
+}
+
+#hora,#minuto,#segundo,span{
+  position: relative;
+  font-size: 6em;
+  margin: 0 0px;
+}
+
+
+ 
+@font-face {
+  font-family: 'relogio digital';
+  src: url(/font/DS-DIGIT.TTF);
+}
