@@ -6,11 +6,43 @@
 }
 
 :root{
-  --telaWidth: 100vw;
-  --telaHeith: 100vh;
+  
 }
 
-#relogio-digital{
+body{
+  perspective: 500px;
+}
+
+#caixa{
+  width: 200px;
+  height: 200px;  
+  margin: 0 auto;
+  transform: rotate(-20deg,-10deg);
+  transform-style: preserve-3d;
+}
+
+.face{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.topo{
+  transform: translateY(100px);
+  background: red;
+}
+
+.lado1{
+  transform: rotateY(90deg) translateZ(100px);
+  background: blue;
+}
+.lado2{
+  transform: rotateY(-90deg) translateZ(100px);
+  background: rebeccapurple;
+}
+
+
+/* #relogio-digital{
  display: flex;
  justify-content: center;
  align-items: center;
@@ -21,7 +53,6 @@
  transform: translate(-50%,-50%);
  width: 25em;
  height: 6.25em;
- overflow: hidden;
  outline: 2px solid red;
  z-index: 100;
  gap:10px;
@@ -43,4 +74,4 @@
 @font-face {
   font-family: 'relogio digital';
   src: url(/font/DS-DIGIT.TTF);
-}
+} */

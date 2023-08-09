@@ -12,10 +12,10 @@ const relogio = () =>{
 
 const relogioAtvo = ({horas,minutos,segundos}) => {
    horasRelogio.innerHTML = horas;
-   minutosRelogio.innerHTML = minutos;
+   minutosRelogio.innerHTML = minutos < 10 ? '0'+minutos : minutos;
    segundosRelogio.innerHTML = segundos < 10 ? '0'+segundos : segundos;
 }
 
-setInterval(()=>{
-    relogioAtvo(relogio())
-},100)
+// setInterval(()=>{
+//     relogioAtvo(relogio())
+// },1000)
