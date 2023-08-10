@@ -1,6 +1,7 @@
 const horasRelogio = document.querySelector('#hora');
 const minutosRelogio = document.querySelector('#minuto');
 const segundosRelogio = document.querySelector('#segundo');
+const btn = document.querySelector('#btn-3d')
 
 const relogio = () =>{
     const horaAtual = new Date();
@@ -16,6 +17,10 @@ const relogioAtvo = ({horas,minutos,segundos}) => {
    segundosRelogio.innerHTML = segundos < 10 ? '0'+segundos : segundos;
 }
 
-// setInterval(()=>{
-//     relogioAtvo(relogio())
-// },1000)
+btn.addEventListener('click',()=>{
+    document.getElementById('relogio3d').classList.toggle('ativo')
+})
+
+setInterval(()=>{
+    relogioAtvo(relogio())
+},1000)

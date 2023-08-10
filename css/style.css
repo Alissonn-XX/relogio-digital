@@ -5,44 +5,44 @@
   font-family: 'relogio digital';
 }
 
-:root{
-  
-}
-
 body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   perspective: 500px;
 }
 
-#caixa{
+.ativo{
+   animation: rotate 10s infinite alternate;
+}
+
+#btn-3d{
+  position: absolute;
+  top: 130px;
+}
+
+#btn-3d button{
+  display: block;
+  padding: 10px 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #312f2f;
+  box-shadow: 0 0 2px 2px #fdfdfd;
+  color: #ebebeb;
+  font-size: larger;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+#relogio3d{
   width: 200px;
-  height: 200px;  
-  margin: 0 auto;
-  transform: rotate(-20deg,-10deg);
+  height: 200px;
   transform-style: preserve-3d;
 }
 
-.face{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-}
-
-.topo{
-  transform: translateY(100px);
-  background: red;
-}
-
-.lado1{
-  transform: rotateY(90deg) translateZ(100px);
-  background: blue;
-}
-.lado2{
-  transform: rotateY(-90deg) translateZ(100px);
-  background: rebeccapurple;
-}
-
-
-/* #relogio-digital{
+#relogio-digital{
  display: flex;
  justify-content: center;
  align-items: center;
@@ -50,22 +50,63 @@ body{
  padding: 5px;
  top: 50%;
  left: 50%;
- transform: translate(-50%,-50%);
- width: 25em;
- height: 6.25em;
- outline: 2px solid red;
+ transform: translate(-50%,-50%) translateZ(50px);
+ width: 20em;
+ height: 6em;
+ border: 2px solid rgb(34, 34, 34);
  z-index: 100;
  gap:10px;
+ border-radius: 5px;
+ background: #eee;
+ box-shadow: 0 0 2px 2px #fdfdfd;
 }
 
-#relogio-digital:is(.ativo) span{
-  display: inline-block;
-  
+.lado-topo,
+.lados-left,
+.lados-right,
+.lados-base,
+.lados-bottom{
+  position: absolute;
+  background: #6a6a6a;
 }
+
+.lado-topo{
+   transform: rotateX(90deg) translateZ(24px) translate(-61px,-24px);
+   height: 150px;
+   width: 320px;
+   border-radius: 5px;
+}
+.lados-right{
+   transform: rotateY(90deg) translateZ(184px) translate(25px,51px);
+   height: 95px;
+   width: 150px;
+   border-radius: 5px;
+}
+.lados-left{
+  transform: rotateY(270deg) translateZ(135px) translate(-24px,50px);
+  height: 95px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.lados-base{
+  transform: rotateX(90deg) translateZ(-71px) translate(-61px,-24px);
+  height: 150px;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.lados-bottom{
+   transform: rotateY(180deg) translateZ(95px) translate(58px,53px);
+   height: 94px;
+   width: 320px;
+   border-radius: 5px;
+}
+
 
 #hora,#minuto,#segundo,span{
   position: relative;
-  font-size: 6em;
+  font-size: 5em;
   margin: 0 0px;
 }
 
@@ -74,4 +115,19 @@ body{
 @font-face {
   font-family: 'relogio digital';
   src: url(/font/DS-DIGIT.TTF);
-} */
+} 
+
+
+@keyframes rotate {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
