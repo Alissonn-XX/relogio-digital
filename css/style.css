@@ -88,14 +88,12 @@ body{
   width: 150px;
   border-radius: 5px;
 }
-
 .lados-base{
   transform: rotateX(90deg) translateZ(-71px) translate(-61px,-24px);
   height: 150px;
   width: 320px;
   border-radius: 5px;
 }
-
 .lados-bottom{
    transform: rotateY(180deg) translateZ(95px) translate(58px,53px);
    height: 94px;
@@ -106,17 +104,13 @@ body{
 
 #hora,#minuto,#segundo,span{
   position: relative;
-  font-size: 5em;
-  margin: 0 0px;
+  font-size: 4.2em;
 }
 
-
- 
 @font-face {
   font-family: 'relogio digital';
   src: url(/font/DS-DIGIT.TTF);
 } 
-
 
 @keyframes rotate {
   from {
