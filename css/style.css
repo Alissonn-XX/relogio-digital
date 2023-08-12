@@ -101,7 +101,6 @@ body{
    border-radius: 5px;
 }
 
-
 #hora,#minuto,#segundo,span{
   position: relative;
   font-size: 4.2em;
